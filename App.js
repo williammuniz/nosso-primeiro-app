@@ -5,10 +5,9 @@ import Header from './src/components/Header';
 export default class App extends React.Component {
     render() {
         return (
-            <View >
-                <Header/>
+            <View>
+                <Header title="Pessoas!"/>
             </View>
-
         );
     }
 }
