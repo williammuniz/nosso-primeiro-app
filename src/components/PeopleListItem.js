@@ -9,7 +9,7 @@ const PeopleListItem = props => {
     return (
         <TouchableOpacity onPress={() => {
             console.log('clicou em mim ', first);
-            navigateToPeopleDatail();
+            navigateToPeopleDatail({people});
         }}>
 
 
