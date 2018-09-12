@@ -1,12 +1,12 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {View, ScrollView, Text, Image, StyleSheet} from 'react-native';
 import Line from '../components/Line'
 
 export default class PeopleDetailPage extends React.Component {
     render() {
         const {people} = this.props.navigation.state.params;
         return (
-            <View style={styles.container}>
+            <ScrollView style={styles.container}>
                 <Image
                     source={{uri: people.picture.large}}
                     style={styles.avatar}/>
@@ -18,7 +18,7 @@ export default class PeopleDetailPage extends React.Component {
                     <Line label="Cel:" content={people.cell}/>
                     <Line label="Nacionalidade:" content={people.nat}/>
                 </View>
-            </View>
+            </ScrollView>
         );
     }
 }
